@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="data:image/svg+xml,
+  <svg xmlns='http://www.w3.org/2000/svg' width='64' height='64'>
+    <rect width='100%' height='100%' fill='white'/>
+    <text x='50%' y='55%' font-size='36' font-family='Arial, sans-serif'
+          fill='black' text-anchor='middle' dominant-baseline='middle'>CMP</text>
+  </svg>"/>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Batch 2029</title>
+
+  <!-- Favicon (CMP in black font) -->
+  <link rel="icon" href="data:image/svg+xml,
+    <svg xmlns='http://www.w3.org/2000/svg' width='64' height='64'>
+      <rect width='100%' height='100%' fill='white'/>
+      <text x='50%' y='55%' font-size='28' font-family='Arial, sans-serif'
+            fill='black' text-anchor='middle' dominant-baseline='middle'>CMP</text>
+    </svg>"/>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f2f5;
+      color: #333;
+      transition: background 0.3s, color 0.3s;
+    }
+    a { text-decoration: none; color: inherit; }
+    h1,h2,h3 { margin: 0.5em 0; }
+    .container { width: 90%; max-width: 1100px; margin: auto; }
+    .section { padding: 60px 0; }
+
+    nav {
+      background: linear-gradient(45deg,#6a11cb,#2575fc);
+      color: #fff;
+      padding: 15px 0;
+      position: sticky; top: 0; z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    nav .container {
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    nav ul {
+      list-style: none; display: flex; gap: 20px; margin: 0; padding: 0;
+    }
+    nav ul li a { color: #fff; font-weight: bold; transition: color 0.3s; }
+    nav ul li a:hover { color: #ffe082; }
+    .toggle-btn {
+      background: #fff; color: #2575fc;
+      border: none; padding: 6px 12px;
+      border-radius: 20px; cursor: pointer;
+      transition: background 0.3s;
+    }
+    .toggle-btn:hover { background: #ffe082; color: #333; }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f') center/cover;
+      color: #fff; text-align: center; padding: 120px 20px;
+    }
+    .hero h1 { font-size: 2.8em; }
+    .hero p { font-size: 1.2em; margin: 20px 0; }
+
+    .news-grid {
+      display: grid; gap: 20px;
+      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    }
+    .card {
+      background: #fff; border-radius: 12px; overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    .card img { width: 100%; height: 180px; object-fit: cover; }
+    .card-content { padding: 15px; }
+    .card-content a button {
+      margin-top: 10px;
+      background: linear-gradient(45deg,#6a11cb,#2575fc);
+      color: #fff; font-weight: bold;
+      border: none; padding: 8px 14px;
+      border-radius: 20px; cursor: pointer;
+      transition: background 0.3s;
+    }
+    .card-content a button:hover {
+      background: linear-gradient(45deg,#ff8a00,#e52e71);
+    }
+
+    .events ul { list-style: none; padding: 0; }
+    .events li {
+      padding: 14px; margin: 10px 0;
+      background: #fff; border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .events li:hover { transform: scale(1.02); background: #f9f9ff; }
+
+    footer {
+      background: #222; color: #fff; text-align: center;
+      padding: 25px; margin-top: 40px;
+    }
+    footer p { margin: 5px; }
+
+    body.dark {
+      background: #121212; color: #ddd;
+    }
+    body.dark nav { background: #1c1c1c; }
+    body.dark .card, body.dark .events li {
+      background: #1e1e1e; color: #ddd;
+    }
+    body.dark footer { background: #111; }
+    body.dark .toggle-btn { background: #ddd; color: #222; }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <h2>Batch 2029</h2>
+      <ul>
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="index.html#news">News</a></li>
+        <li><a href="index.html#events">Events</a></li>
+      </ul>
+      <button class="toggle-btn" onclick="toggleMode()">Dark Mode</button>
+    </div>
+  </nav>
+
+  <section id="hero" class="hero">
+    <h1>Welcome to Batch 2029</h1>
+    <p>Stay updated with the latest educational news and events.</p>
+  </section>
+
+  <!-- News -->
+  <section id="news" class="section">
+    <div class="container">
+      <h2>Latest News</h2>
+      <div class="news-grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7" alt="">
+          <div class="card-content">
+            <h3>New Study Materials Released</h3>
+            <a href="events.html"><button>Read More</button></a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644" alt="">
+          <div class="card-content">
+            <h3>Today's Schedule</h3>
+            <a href="schedule.html"><button>Read More</button></a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="">
+          <div class="card-content">
+            <h3>Deadlines</h3>
+            <a href="deadlines.html"><button>Read More</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events -->
+  <section id="events" class="section events">
+    <div class="container">
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li><strong>15 Sep 2025:</strong> Orientation Day</li>
+        <li><strong>01 Oct 2025:</strong> Science Fair</li>
+        <li><strong>10 Nov 2025:</strong> Midterm Exams Begin</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Batch 2029. All rights reserved.</p>
+    <p>Designed by <strong>Anton Azer</strong></p>
+  </footer>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle("dark");
+    }
+  </script>
+</body>
+</html>
